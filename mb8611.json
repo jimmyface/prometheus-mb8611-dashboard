@@ -151,7 +151,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "moto_device_connected_status{job="mb8611"}",
+          "expr": "moto_device_connected_status{job=\"motorola-export\"}",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
@@ -222,7 +222,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "moto_device_hardware_info{job=\"mb8611\"}",
+          "expr": "moto_device_hardware_info{job=\"motorola-export\"}",
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
@@ -735,7 +735,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "moto_downstream_channel_power_dbmv{job=\"mb8611\"}",
+          "expr": "moto_downstream_channel_power_dbmv{job=\"motorola-export\"}",
           "legendFormat": "Downstream {{channel}}",
           "range": true,
           "refId": "A"
@@ -834,7 +834,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "moto_downstream_channel_signal_noise_ratio{job=\"mb8611\"}",
+          "expr": "moto_downstream_channel_signal_noise_ratio{job=\"motorola-export\"}",
           "legendFormat": "DS Channel {{channel}}",
           "range": true,
           "refId": "A"
@@ -931,7 +931,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "sum(moto_downstream_channel_locked{job=\"mb8611\"})",
+          "expr": "sum(moto_downstream_channel_locked{job=\"motorola-export\"})",
           "hide": false,
           "legendFormat": "Upstream Locked Channels",
           "range": true,
@@ -1045,7 +1045,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "moto_upstream_channel_power_dbmv{job=\"mb8611\"}",
+          "expr": "moto_upstream_channel_power_dbmv{job=\"motorola-export\"}",
           "legendFormat": "Upstream {{channel}}",
           "range": true,
           "refId": "A"
@@ -1140,7 +1140,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "avg(moto_upstream_channel_symbol_rate{job=\"mb8611\"})",
+          "expr": "avg(moto_upstream_channel_symbol_rate{job=\"motorola-export\"})",
           "legendFormat": "Upstream Symbol Rate (avg)",
           "range": true,
           "refId": "A"
@@ -1237,7 +1237,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "sum(moto_upstream_channel_locked{job=\"mb8611\"})",
+          "expr": "sum(moto_upstream_channel_locked{job=\"motorola-export\"})",
           "hide": false,
           "legendFormat": "Upstream Locked Channels",
           "range": true,
@@ -1351,7 +1351,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "rate(moto_downstream_channel_corrected_total{job=\"mb8611\"}[$__rate_interval])",
+          "expr": "rate(moto_downstream_channel_corrected_total{job=\"motorola-export\"}[$__rate_interval])",
           "legendFormat": "Downstream {{channel}}",
           "range": true,
           "refId": "A"
@@ -1451,7 +1451,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "builder",
-          "expr": "rate(moto_downstream_channel_uncorrected_total{job=\"mb8611\"}[$__rate_interval])",
+          "expr": "rate(moto_downstream_channel_uncorrected_total{job=\"motorola-export\"}[$__rate_interval])",
           "legendFormat": "Downstream {{channel}}",
           "range": true,
           "refId": "A"
